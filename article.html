@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章标题 - 我的博客</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/article.css">
+</head>
+<body>
+<header id="bing-header">
+    <div class="container">
+        <div class="header-top">
+            <img src="images/avatar.webp" alt="头像" class="avatar">
+            <div class="header-info">
+                <h1>我的个人博客</h1>
+                <div class="author-info">
+                    <h2 class="author-name">SKKK</h2>
+                    <p class="author-bio">野生大学生一只哈~</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="杂谈.html">杂谈</a></li>
+                <li><a href="编程.html">编程</a></li>
+                <li><a href="archive.html">归档</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+            <ul class="social-links">
+                <li>
+                    <a href="https://space.bilibili.com/472478049" target="_blank" title="哔哩哔哩">
+                        <i class="fab fa-bilibili"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Kou-JunHao" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.zhihu.com/people/kqin-36-75" target="_blank" title="知乎">
+                        <i class="fab fa-zhihu"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="container">
+        <article class="article-content">
+            <h1>Hello World!</h1>
+            <div class="meta">
+                <span class="date">发布日期：2025-01-07</span>
+                <span class="author">作者：SKKK</span>
+                <span class="category" data-category="杂谈">分类：杂谈</span>
+                <span class="views"><i class="fas fa-eye"></i> 阅读量：<span id="viewCount">0</span></span>
+            </div>
+            
+            <div class="content">
+                <p>“Hello, World!” 是编程中的经典示例,译为“你好，世界”，通常作为学习新编程语言的第一个程序。这个简单的程序通常只包含一行代码，目的是向屏幕输出“Hello, World!” 字符串。它的起源可以追溯到1978年发布的《C程序设计语言》一书，其中作为第一个示例程序介绍。在编程学习中，这个示例程序不仅帮助新手了解编程语言的基本语法和结构，还能验证环境设置是否正确。</p>
+                <h2>代码示例</h2>
+                <p>使用C语言输出Hello World</p>
+                <pre><code>
+                    #include &ltstdio.h&gt
+                        int main() {
+                            printf("Hello, World!\n");
+                            return 0;
+                        }
+                </code></pre>
+                <blockquote>
+                    经久不衰————
+                </blockquote>
+            </div>
+        </article>
+
+        <aside class="sidebar">
+            <section class="related-articles">
+                <h3>相关文章</h3>
+                <ul>
+                    <li>
+                        <a href="article2.html">Python入门指南</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <section class="comments">
+        <h2>评论区</h2>
+        <div class="comment-form">
+            <textarea placeholder="写下你的评论..." maxlength="500"></textarea>
+            <div class="form-footer">
+                <span class="char-count">0/500</span>
+                <button class="submit-btn">提交评论</button>
+            </div>
+        </div>
+        <div class="comment-list">
+            <div class="comment-item">
+                <img src="images/avatar.webp" alt="用户头像" class="comment-avatar">
+                <div class="comment-content">
+                    <div class="comment-header">
+                        <span class="comment-author">SKKK</span>
+                        <span class="comment-date" data-timestamp="1736202840000">2025-01-07 12:34</span>
+                    </div>
+                    <p class="comment-text">这是一个示例评论</p>
+                    <div class="comment-actions">
+                        <button class="like-btn" title="点赞">
+                            <i class="far fa-thumbs-up"></i> <span class="like-count">0</span>
+                        </button>
+                        <button class="reply-btn" title="回复">回复</button>
+                    </div>
+                    <div class="comment-replies"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Powered By SKKK</p>
+        </div>
+    </footer>
+
+    <script src="js/article.js"></script>
+</body>
+</html>

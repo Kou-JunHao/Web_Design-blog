@@ -1,0 +1,254 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+}
+
+/* 通用样式 */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bing-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.bing-background:hover {
+    opacity: 1;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header .header-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+header .header-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+header .author-info {
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+header .author-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+header .author-bio {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header nav {
+    position: static;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header .social-links {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+header .social-links a {
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+header .social-links a:hover {
+    opacity: 0.8;
+}
+
+/* 主内容区域 */
+main {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+.featured-articles {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+/* 文章样式 */
+article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+article a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* 侧边栏样式 */
+.sidebar section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.sidebar h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    font-size: 0.9rem;
+}
+
+body {
+    padding-bottom: 60px;
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+    
+    header .header-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    header .header-info {
+        min-width: auto;
+    }
+
+    header .author-info {
+        padding-bottom: 0;
+    }
+
+    header nav {
+        margin-top: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .social-links {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    main {
+        margin-top: 220px;
+    }
+}

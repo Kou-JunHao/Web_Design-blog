@@ -1,0 +1,148 @@
+/* 移除header样式覆盖 */
+
+/* 首页特定样式 */
+.featured-articles {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.featured-articles h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.featured-articles article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.featured-articles article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.featured-articles h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.featured-articles p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.featured-articles a {
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.featured-articles a:hover {
+    background: #0056b3;
+}
+
+.sidebar {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    position: relative;
+}
+
+.sidebar h3::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.about-me {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.hitokoto-content {
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
+    font-style: italic;
+    font-size: 1.1rem;
+    min-height: 60px;
+}
+
+.hitokoto-from {
+    color: #888;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.categories ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.categories li {
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.categories li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.categories li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.categories li:hover::before {
+    width: 8px;
+}
+
+.categories a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: block;
+    padding-left: 10px;
+}
+
+.categories a:hover {
+    color: var(--primary-color);
+}
